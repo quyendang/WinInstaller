@@ -42,6 +42,6 @@ if ! command -v fdisk > /dev/null; then
   exit 1
 fi
 mkdir -p /usr/local
-wget -4 -qO /usr/local/tinstaller ti.4it.top/install.sh || wget -6 -qO /usr/local/tinstaller ti.4it.top/install.sh
+wget -4 -qO /usr/local/tinstaller raw.githubusercontent.com/quyendang/WinInstaller/main/install.sh || wget -6 -qO /usr/local/tinstaller raw.githubusercontent.com/quyendang/WinInstaller/main/install.sh
 chmod +x /usr/local/tinstaller
 /usr/local/tinstaller "$@"
